@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id='title'>Survey</h1>
+    <form id='survey-form'>
+        <label class="centered-label" for='name' id='name-label'>Name:</label>
+        <input class="text-box" id='name' type='text' placeholder='Enter your full name'>
+        <label class="centered-label" for='email' id='email-label'>Email:</label>
+        <input class="text-box" id='email' type='email' placeholder='Enter your full email'>
+        <label class="centered-label" for='number' id='number-label'>Number of Cats:</label>
+        <input class="text-box" id='number' type='number' min='1' max='42' placeholder='Enter the number of cats you own'>
+        <label class="centered-label" for='dropdown' id='dropdown-label'>Choose wisely:</label>
+        <select id='dropdown'>
+                <option value='no choice'>You have no choice</option>
+            </select>
+        <label class="centered-label">How great is this page?</label>
+        <label id="great-label" for="great">
+                <input id="great" type="radio" name="greatness">It's Grrrrrreat! 
+          </label>
+        <label id="sooo-great-label" for="sooo-great">
+                <input id='sooo-great' type='radio' name="greatness">Wow, this is such a grrrreat(!) page, I am eternally indebted to its creator
+            </label>
+        <label class="centered-label">2 + 2 is: </label>
+        <div class="checkbox-wrapper">
+            <input type='checkbox' name='three' id="three-checkbox" value="3" />
+            <label class="checkbox-label" for="three-checkbox" id="three-label">3</label>
+        </div>
+        <div class="checkbox-wrapper">
+            <input type='checkbox' name='five' id="five-checkbox" value="5" />
+            <label class="checkbox-label" for="five-checkbox" id="five-label">5</label>
+        </div>
+        <div class="checkbox-wrapper">
+            <input type='checkbox' name='all' id="all-checkbox" value="all of them at once" />
+            <label class="checkbox-label" for="all-checkbox" id="all-label">all of them at once</label>
+        </div>
+        <label class="centered-label" for='comments'>What do you have to say for yourself?</label>
+        <textarea rows='4' cols="10"></textarea>
+        <input type='submit'>
+    </form>
+</body>
+
+</html>
